@@ -2,20 +2,59 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="tjwz.css">
+	<title>仿天猫产品logo区域</title>
+	<style type="text/css">
+	*{ margin: 0; padding: 0;}
+	body{
+		font-size: 10px;
+	}
+	.cont{
+		width: 300px;
+	}
+	.logoimg{
+		width: 96px;
+		height: 86px;
+		/*border:1px solid #F5F5F5;*/
+		position: relative;
+		float: left;
+		/*为灰色背景层设定一个相对定位的父级元素*/
+	}
+	.logohov{
+		width: 96px;
+		height: 86px;
+		text-align: center;
+		color: #fff;
+		background: rgba(20, 21, 21, 0.5);
+		position: absolute;/*使用定位，确定灰色背景层位置*/
+		left: 0px;
+		top: 0px;
+		display: none;
+	}
+	.logoimg:hover .logohov{
+		display: block;
+	}
+	.logohov>a{
+		color: #fff;
+		text-decoration: none;
+		background: #FF0000;
+		border-radius: 3px;
+	}
+	.hea{
+		width: 85px;
+		padding: 5px 5px;
+		text-align: right;
+	}
+	</style>
 </head>
 <body>
-	<ul>
-		<li><i class="tjwz mls"></i><a href="">美丽说</a></li>
-		<li><i class="tjwz mgj"></i><a href="">蘑菇街</a></li>
-		<li><i class="tjwz zmw"></i><a href="">知美网</a></li>
-		<li><i class="tjwz guang"></i><a href="">逛</a></li>
-		<li><i class="tjwz lsk"></i><a href="">零食控</a></li>
-		<li><i class="tjwz dt"></i><a href="">堆糖网</a></li>
-	</ul>
-	<div style=" clear:both; width:300px; height:200px; background:#cc00ff url('mls.png') 50px 20px no-repeat">
-		
+<div class="cont">
+	<div class="logoimg">
+		<img src="zc.png" alt="子初" title="子初">
+		<div class="logohov"><p class="hea">心</p><p>优惠券 Y50</p><a href="#">点击进入1</a>
+		</div>
 	</div>
+	
+	
+</div>
 </body>
 </html>
